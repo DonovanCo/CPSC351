@@ -142,4 +142,6 @@ while True:
     inp = list(input_string)
     inp.append(" ")
     t = TM(states, alphabet, tape, start, accept, reject)
+	if input_string == "quit":
+		sys.exit()
     t.trans_q1(inp, 0)
